@@ -1,0 +1,465 @@
+@media screen and (max-width:480px) {
+    /*NAVIGATION */
+    #desktop-nav{
+        display: none;
+    }
+
+    #mobile-nav{
+        display:flex;
+        max-width: 480px;
+
+    }
+
+    #mobile-nav #menu-mobile .menu-icon.active span:nth-child(2)
+    {
+        opacity:0;
+    }
+    #mobile-nav #menu-mobile .menu-icon.active span:nth-child(1)
+    {
+        transform: rotate(45deg) translate(5px,5px);
+    }
+    #mobile-nav #menu-mobile .menu-icon.active span:nth-child(3)
+    {
+        transform:  rotate(-45deg) translate(5px,-5px);
+    }
+    #mobile-nav  .hamburger-menu{
+            display: none;
+            height: 450px;
+            position: relative;
+            margin-top:30px;
+    
+    }
+
+    #mobile-nav .hamburger-menu .nav-links{
+
+        position: absolute;
+        top:10px;
+        right:310px;
+        font-size: 20px;
+    }
+    #mobile-nav .hamburger-menu .nav-info{
+        position: absolute;
+        top:25px;
+        right:70px;
+        width: 150px;
+        text-align: center;
+        font-size: 15px;
+    }
+    #mobile-nav  .hamburger-menu .nav-info-nazionalita{
+        margin:16px 0;
+        position: absolute;
+        top:260px;
+        left:-60px;  
+        display: flex;
+        margin-top:60px;
+      }
+    #mobile-nav  .hamburger-menu .nav-info-nazionalita img{
+        margin-right:20px;
+        padding: 0;
+
+    }
+    #mobile-nav  .hamburger-menu .nav-info-nazionalita p{
+        padding:0;
+        margin-top:0;
+    }
+    #mobile-nav .hamburger-menu.active{
+        
+        display:flex;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        width: 100%;
+        text-align:start;
+        transition: 0.3s;
+    }
+    #mobile-nav #menu-mobile #mobile-icons.active{
+        display: none;
+    }
+
+    /*login-register */
+    #login,#register{
+        display: none;
+    }
+    #login #exit-icon, #register #exit-icon{
+        display: flex;
+        position: absolute;
+        top:2rem;
+        left: 26rem;
+        z-index: 1;
+    }
+    #login .outside-box,
+    #register .outside-box {
+       position: absolute;
+       left:1rem;
+      width: 420px;
+      height:450px;
+      margin: 0;
+    }
+  
+    #login .outside-box h1,
+    #register .outside-box h1 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+  
+    #login .outside-box form input,
+    #register .outside-box form input {
+      width: 90%;
+      margin-bottom:1rem;
+    }
+  
+    #login .outside-box button,
+    #register .outside-box button {
+      width: 80%;
+    }
+  
+    #login .outside-box .member,
+    #register .outside-box .member {
+      font-size: 0.9rem;
+    }
+  
+    #login .outside-box .recover,
+    #register .outside-box .recover {
+        margin-top:1rem;
+        margin-right: 10rem;
+    }
+  
+    #login .outside-box .terms,
+    #register .outside-box .terms {
+      margin-top: 1rem;
+    }
+    /*cart */
+    #cart .side-box.appear{
+        width: 100%;
+        height: 120%;
+        position: absolute;
+        top:0;
+        right:0;
+        z-index: 2;
+    }
+    #cart .side-box h1{
+        margin-left:0;
+        margin-right: 2rem;
+        margin-top:2rem;
+    }
+    #cart .side-box #top-items #exit{
+        margin-top:2rem;
+    }
+    #cart .side-box #bottom-items{
+        right: 2rem;
+    }
+    .items-list{
+        top:6rem;
+        left:2rem;
+    }
+    /*converter*/
+    #currency-box{
+        position: fixed;
+        top:7rem;
+        left:3rem;
+        width: 60%;
+
+    }
+
+
+    /*BIG SHOE CONTAINER*/
+    .big-container{
+        max-width: 480px;
+    }
+    .big-container #image-container 
+    {
+        width: 270px;
+        height: 170px;
+  
+       
+        top:35px;
+        left: 110px;
+    }
+    .big-container #image-container img{
+        width: 100%;
+        height: 100%;
+    }
+    .big-container .text-container{
+  
+        top:220px;
+        left:145px;
+        width: 200px;
+        height: 100px;
+        
+    }
+    .big-container .text-container h1{
+        font-size: 26px;
+    }
+    .big-container .button{
+    
+        top:280px;
+        left:150px;
+    }
+    /* VIDEO CONTAINER*/
+    #second-container{
+        max-width: 480px;
+        height:90vh;
+        position: relative;
+    }
+    #second-container #video-container{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%; 
+        object-fit:cover;
+        overflow: hidden;
+        
+    }
+    #second-container #video-container video {
+   
+         min-width: 100%;
+         min-height: 100%;
+         width: auto;
+         height: auto;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+
+        
+    }
+    #second-container .button2{
+        top:360px;
+        left:30px;
+    }
+    #second-container .text-container2{
+        position: absolute;
+        top:270px;
+        left:30px;
+    }
+    #second-container .text-container2 h1{
+        font-size:35px;
+    }
+    #second-container .text-container2 p{
+        font-size:18px;
+    }
+    #second-container #play-icon{
+        position: absolute;
+        left:400px;
+        top:20px;
+    }
+    /*LOOKS CONTAINER*/
+    #looks-section{
+        position: relative;
+        height: 120vh;
+        max-width: 480px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    #looks-section #section-title{
+        position: absolute;
+        bottom: 480px;
+        width: 300px;
+        height: 80px;
+    }
+    #looks-section #section-title h2{
+        font-size: 25px;
+        margin:0;
+        margin-left: 25px;
+    }
+    #looks-section #products{
+        position: absolute;
+        top:100px;
+        height: 480px;
+
+    }
+    #looks-section #products .product-container{
+        width:300px;
+        padding:0;
+       
+    }
+    #looks-section #products .product-container .product{
+        height: 400px;
+    }
+    #looks-section #products .product-container  .product img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /*SHOES-CONTAINER*/
+    #shoes-section{
+        max-width: 480px;
+        position: relative;
+        height: 80vh;
+        overflow-x:scroll ;
+    }
+    #shoes-section #buttons-container{
+        position: absolute;
+        bottom:300px;
+        width:100%;
+        
+    }
+    #shoes-section #buttons-container .button-container1{
+        margin-left:10px ;
+        margin-right:5px;
+    }
+    #shoes-section #buttons-container .button-container1 button{
+        width:120px;
+    }
+    #shoes-section #buttons-container .button-container1 span{
+        padding:0;
+        margin:0;
+    }
+    #shoes-section #buttons-container .button2-container1{
+        margin-left:5px ;
+        margin-right:5px;
+    }
+    #shoes-section #buttons-container .button2-container1 button{
+        width:150px;
+    }
+    #shoes-section #buttons-container .button2-container1 span{
+        padding: 0;
+        margin:0;
+        font-size: 14px;
+    }
+    #shoes-section #products{
+        position: absolute;
+        top:100px;
+        height: 290px;
+    }
+    #shoes-section #products .product-container{
+        width:170px;
+        margin-left:10px;
+        padding:0;
+    }
+    #shoes-section #products .product-container .product .price-tag{
+        top:140px;
+    }
+    #shoes-section #products .product-container .product .shoe-desc{
+        height: 100px;
+        margin:0;
+    }
+    #shoes-section #products .product-container .product .shoe-desc p{
+        font-size: 12px;
+        margin:5px;
+        padding:0;
+    }
+    #shoes-section #products .product-container .product .shoe-desc span{
+        font-size: 12px;
+        margin:5px;
+        padding:0;
+    }
+    #shoes-section #products .product-container .product #to-buy-icon{
+        top:9rem;
+        right: 0.5rem;
+    }
+
+    /*ADVERTISEMENT SECTION*/
+    
+    #advertisement-section {
+    
+       position: relative;
+       height: 120vh;
+       max-width:480px;
+       display: flex;
+       overflow-y: hidden;
+       overflow-x: scroll;
+    }
+    
+    #advertisement-section #products {
+    
+        position: absolute;
+        top:0;
+        height: 480px;
+    }
+    
+    #advertisement-section #products .product-container {
+        
+        width:300px;
+        padding:0;
+        margin-right: 0;
+    }
+    
+    #advertisement-section #products .product-container .product {
+    
+       height: 400px;
+    }
+    
+    #advertisement-section #products .product-container .product img {
+
+        height: 100%;
+        width: 100%;
+    }
+    
+    #advertisement-section #products .product-container .product .pro-description {
+        border-top: 5px;
+    }
+    #advertisement-section #products .product-container .product .pro-description p{
+        font-size:15px;
+        margin-bottom:0;
+        padding-bottom: 0;
+    }
+    #advertisement-section #products .product-container .product .pro-description #p1{
+        padding:0;
+        margin:0;
+    }
+    /*HISTORY SECTION*/
+    #history .big-container{
+        flex-direction: column;
+        max-width: 480px;
+    }
+    #history .big-container .paragrafo{
+        width: 400px
+    }
+    #history .big-container .paragrafo h2{
+        font-size :28px ;
+    }
+
+    /*OPINION BANNER*/
+    #opinion-banner{
+        display:flex;
+        max-width: 480px;
+    }
+    
+    /*back to beginning section*/
+    #back-to-beginning{
+        display:flex;
+        max-width: 480px;
+    }
+
+    /*mobile bottom-page navbar*/
+    #bottom-page-navbar{
+        display: flex;
+        max-width: 480px;
+    }
+
+    /*sezione pubblicitaria*/
+    #bg-giallo{
+        height: 200px;
+        max-width: 480px;
+    }
+    #bg-giallo h1{
+        top:50px;
+        left:40px;
+        font-size: 30px;
+      
+    }
+    #bg-giallo #button{
+        top:85px;
+        left:100px;
+    }
+
+    /*info section */
+    #info-section{
+        display:none;
+    }
+    #info-section-mobile{
+        display:flex;
+        max-width: 480px;
+    }
+
+    /*footer*/
+    footer{
+        display: none;
+    }
+    #footer-mobile{
+        display:flex;
+        max-width: 480px;
+    }
+}    
